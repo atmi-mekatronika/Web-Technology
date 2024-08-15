@@ -1,0 +1,17 @@
+.header-logo {
+    width: 50px;
+}
+
+section {
+    padding: 50px 0px;
+}
+
+#hero {
+    background-image: url("../img/head-bg.png");
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.hero-logo{
+    margin-top: 20px;
+}
