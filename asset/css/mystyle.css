@@ -1,5 +1,6 @@
 body {
     margin-top: 76px;
+    margin-bottom: 64px;
 }
 
 .header-logo {
@@ -41,4 +42,13 @@ section {
     background-attachment: fixed;
     background-size: cover;
     color: aliceblue;
+}
+
+#contact {
+    background-color: rgb(225, 250, 250);
+}
+
+#footer {
+    color: aliceblue;
+    padding: 20px 0px;
 }
