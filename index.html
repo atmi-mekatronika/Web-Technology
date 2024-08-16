@@ -18,7 +18,7 @@
 <body>
     <!-- Bagian Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
             <a class="navbar-brand" href="#">
                 <img class="header-logo" src="asset/img/logo.png" />
                 My Company
@@ -29,9 +29,9 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-link" href="#">Services</a>
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link active" href="#hero">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#services">Services</a>
+                    <a class="nav-link" href="#about">About</a>
                     <a class="nav-link" href="#">Contact</a>
                 </div>
             </div>
@@ -42,17 +42,91 @@
     <section id="hero">
         <div class="container">
             <div class="row">
-                <div class="col-sm-8" >
+                <div class="col-sm-8">
                     <h1>Welcome to My Company!</h1>
                     <p>
                         Fusce tincidunt ultrices urna, non suscipit nisl rutrum et. Cras interdum arcu id varius
                         venenatis. Nam vitae scelerisque ante, non scelerisque lectus. Proin accumsan eget massa vel
                         euismod. Morbi sagittis risus neque, sit amet finibus nibh porta quis.
                     </p>
-                    <a class="btn btn-danger" href="#">More &raquo;</a>
+                    <a class="btn btn-danger" href="#" onclick="testFunction()">More &raquo;</a>
                 </div>
-                <div class="col-sm-4" >
-                    <img class="hero-logo" src="asset/img/logo.png"/>
+                <div class="col-sm-4">
+                    <img class="hero-logo" src="asset/img/logo.png" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Services -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header">
+                <img class="section-img" src="asset/img/services2.png" />
+                <h2>Services</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <h4>Service 1</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mi lectus, scelerisque at volutpat
+                        id, consequat et felis. Sed rhoncus egestas mattis. Pellentesque sed faucibus sapien, bibendum
+                        scelerisque nisl. Curabitur molestie urna sagittis ante imperdiet, quis sagittis sapien dapibus.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Service 2</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mi lectus, scelerisque at volutpat
+                        id, consequat et felis. Sed rhoncus egestas mattis. Pellentesque sed faucibus sapien, bibendum
+                        scelerisque nisl. Curabitur molestie urna sagittis ante imperdiet, quis sagittis sapien dapibus.
+                    </p>
+                </div>
+                <div class="col-sm-4">
+                    <h4>Service 3</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mi lectus, scelerisque at volutpat
+                        id, consequat et felis. Sed rhoncus egestas mattis. Pellentesque sed faucibus sapien, bibendum
+                        scelerisque nisl. Curabitur molestie urna sagittis ante imperdiet, quis sagittis sapien dapibus.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian About -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <img class="section-img" src="asset/img/about2.png" />
+                <h2>About</h2>
+            </div>
+            <div>
+                <p> Quisque aliquet in orci ut pharetra. Curabitur consequat tempor egestas. Mauris molestie nisi eget
+                    pharetra blandit.
+                    Proin fermentum aliquam nisl, accumsan interdum ante rutrum nec.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>
+                        Vission
+                    </h4>
+                    <p>
+                        Pellentesque sed faucibus sapien, bibendum scelerisque nisl. Curabitur molestie urna sagittis
+                        ante imperdiet, quis sagittis sapien dapibus. Proin fringilla elementum consequat. Aliquam
+                        viverra velit id tortor pharetra, rhoncus bibendum massa bibendum. Curabitur pretium hendrerit
+                        libero eget efficitur. Quisque a sem aliquet, rutrum magna sed, ultricies sapien. Fusce sed elit
+                        imperdiet, pulvinar lacus eget, imperdiet tortor.
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <h4>
+                        Performance
+                    </h4>
+                    <p>
+                        Pellentesque sed faucibus sapien, bibendum scelerisque nisl. Curabitur molestie urna sagittis ante imperdiet, quis sagittis sapien dapibus. Proin fringilla elementum consequat. Aliquam viverra velit id tortor pharetra, rhoncus bibendum massa bibendum. Curabitur pretium hendrerit libero eget efficitur. Quisque a sem aliquet, rutrum magna sed, ultricies sapien. Fusce sed elit imperdiet, pulvinar lacus eget, imperdiet tortor.
+                    </p>
                 </div>
             </div>
         </div>
@@ -92,14 +166,6 @@
 
 
 
-
-
-    <section>
-        Services
-    </section>
-    <section>
-        About
-    </section>
     <section>
         Contact
     </section>
@@ -112,6 +178,7 @@
     <!-- Bootstrap JS -->
     <script src="asset/js/jquery.js"></script>
     <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/myscript.js"></script>
 </body>
 
 </html>
