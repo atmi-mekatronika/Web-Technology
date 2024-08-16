@@ -66,30 +66,27 @@
                 <h2>Services</h2>
             </div>
             <div class="row">
-                <div class="col-sm-4">
-                    <h4>Service 1</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mi lectus, scelerisque at volutpat
-                        id, consequat et felis. Sed rhoncus egestas mattis. Pellentesque sed faucibus sapien, bibendum
-                        scelerisque nisl. Curabitur molestie urna sagittis ante imperdiet, quis sagittis sapien dapibus.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <h4>Service 2</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mi lectus, scelerisque at volutpat
-                        id, consequat et felis. Sed rhoncus egestas mattis. Pellentesque sed faucibus sapien, bibendum
-                        scelerisque nisl. Curabitur molestie urna sagittis ante imperdiet, quis sagittis sapien dapibus.
-                    </p>
-                </div>
-                <div class="col-sm-4">
-                    <h4>Service 3</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mi lectus, scelerisque at volutpat
-                        id, consequat et felis. Sed rhoncus egestas mattis. Pellentesque sed faucibus sapien, bibendum
-                        scelerisque nisl. Curabitur molestie urna sagittis ante imperdiet, quis sagittis sapien dapibus.
-                    </p>
-                </div>
+                <?php include("connectdb.php"); ?>
+
+                <?php
+                    $sql = "SELECT nama, keterangan FROM services";
+                    $result = $conn->query($sql);
+
+                    if ($result->num_rows > 0) {
+                    // output data of each row
+                    while($row = $result->fetch_assoc()) {
+                        echo '<div class="col-sm-4">';
+                        echo '<h4>' . $row["nama"] . '</h4>';
+                        echo '<p>' .$row["keterangan"] . '</p>';
+                        echo '</div>';
+
+                    }
+                    } else {
+                    echo "0 results";
+                    }
+                    $conn->close();
+                ?>
+
             </div>
         </div>
     </section>
